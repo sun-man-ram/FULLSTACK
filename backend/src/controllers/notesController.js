@@ -1,9 +1,14 @@
-import Note from "../../models/Note.js";
+import Note from "../models/Note.js";
 
 
 
 export async function getAllNotes(req,res) {
-    res.status(200).send("You just fetched the notes ");
+
+    try {
+        const notes=await Note.findOne
+    } catch (error) {
+        
+    }
 }
 
 
