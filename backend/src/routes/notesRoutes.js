@@ -3,7 +3,7 @@ import {
   createNote,
   deleteNote,
   getAllNotes,
-//   getNoteById,
+  getNoteById,
   updateNote,
 } from "../controllers/notesController.js";
 
@@ -13,7 +13,7 @@ router.get("/",getAllNotes)
 router.post("/",createNote);
 router.put("/:id",updateNote);
 router.delete("/:id",deleteNote);
-
+router.get("/:id",getNoteById);
 
 
 export default router;
